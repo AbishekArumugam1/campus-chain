@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CampusChain</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<header>
+    <h1>🎓 CampusChain Dashboard</h1>
+    <button id="connectBtn">Connect Wallet</button>
+</header>
+
+
+<div class="cards">
+
+
+    <div class="card">
+        <h3>Total Students</h3>
+        <h1 id="totalStudents">0</h1>
+    </div>
+
+
+    <div class="card">
+        <h3>Fees Paid</h3>
+        <h1 id="feesPaid">0</h1>
+    </div>
+
+
+</div>
+
+
+<div class="form">
+
+
+    <h2>Add Student</h2>
+
+
+    <input type="number" id="rollNo" placeholder="Roll Number">
+
+
+    <input type="text" id="name" placeholder="Student Name">
+
+
+    <input type="text" id="department" placeholder="Department">
+
+
+    <input type="number" id="year" placeholder="Year">
+
+
+    <button onclick="addStudent()">Add Student</button>
+
+
+</div>
+
+
+<h2>Students</h2>
+
+
+<table>
+<thead>
+<tr>
+    <th>Roll</th>
+    <th>Name</th>
+    <th>Dept</th>
+    <th>Year</th>
+    <th>Attendance</th>
+    <th>Fees</th>
+    <th>Actions</th>
+</tr>
+</thead>
+
+
+<tbody id="studentTable">
+
+
+</tbody>
+
+
+</table>
+
+
+<script type="module" src="app.js"></script>
+
+
+</body>
+</html>
